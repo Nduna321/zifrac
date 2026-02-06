@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /forms/
+Disallow: /assets/vendor/
+Sitemap: https://zifrac.co.zw/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

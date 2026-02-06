@@ -1,0 +1,51 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ZIFRAC Land Developers",
+  "image": "https://zifrac.co.zw/assets/img/logo.png",
+  "description": "Professional construction, land development, civil engineering and architectural services across Zimbabwe",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "36 Nelson Mandela Avenue, 6th Floor Century House West",
+    "addressLocality": "Harare",
+    "addressRegion": "Harare",
+    "postalCode": "",
+    "addressCountry": "ZW"
+  },
+  "telephone": [
+    "+263772356805",
+    "+263242753602"
+  ],
+  "email": "zifracholdings@gmail.com",
+  "url": "https://zifrac.co.zw",
+  "sameAs": [
+    "https://www.facebook.com/zifrac",
+    "https://www.linkedin.com/company/zifrac"
+  ],
+  "priceRange": "$$$",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-17.8252",
+    "longitude": "31.0521"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Zimbabwe"
+  },
+  "serviceType": [
+    "Land Development",
+    "Road Construction",
+    "Architecture & Design",
+    "Water & Sewer Infrastructure",
+    "Equipment Hire",
+    "Civil Engineering",
+    "Project Management"
+  ],
+  "foundingDate": "2025",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "telephone": "+263772356805",
+    "email": "zifracholdings@gmail.com"
+  }
+}

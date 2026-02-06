@@ -168,14 +168,14 @@
     if (document.querySelector('.whatsapp-float')) {
       return;
     }
-  const encodedMessage = encodeURIComponent('May I have more information about Muneni Retail?');
+  const encodedMessage = encodeURIComponent('May I have more information about ZIFRAC Land Developers?');
     const whatsappLink = document.createElement('a');
-    whatsappLink.href = `https://wa.me/263788300273?text=${encodedMessage}`;
+    whatsappLink.href = `https://wa.me/263772356805?text=${encodedMessage}`;
     whatsappLink.className = 'whatsapp-float';
     whatsappLink.target = '_blank';
     whatsappLink.rel = 'noopener noreferrer';
-    whatsappLink.setAttribute('aria-label', 'Chat with Muneni Retail on WhatsApp (+263 78 830 0273)');
-    whatsappLink.innerHTML = '<i class="bi bi-whatsapp"></i><span>WhatsApp Muneni Retail</span>';
+    whatsappLink.setAttribute('aria-label', 'Chat with ZIFRAC on WhatsApp (+263 77 235 6805)');
+    whatsappLink.innerHTML = '<i class="bi bi-whatsapp"></i><span>WhatsApp ZIFRAC</span>';
     document.body.appendChild(whatsappLink);
   }
 
