@@ -36,8 +36,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Main CSS File (preload to reduce render-blocking) -->
+  <link rel="preload" href="assets/css/main.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link href="assets/css/main.min.css" rel="stylesheet"></noscript>
 
   <!-- =======================================================
   * Template Name: ZIFRAC Land Developers
@@ -137,7 +138,7 @@
         <div class="row g-0">
 
           <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/why-us-bg.jpg" alt="">
+            <img src="assets/img/why-us-bg.jpg" alt="" loading="lazy">
           </div>
 
           <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
@@ -214,7 +215,7 @@
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
-      <img src="assets/img/cta-bg.jpg" alt="">
+      <img src="assets/img/cta-bg.jpg" alt="" loading="lazy">
 
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -246,7 +247,7 @@
           <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/chakwizira.jpg" class="img-fluid" alt="Chakwizira T. R. Diza">
+                <img src="assets/img/team/chakwizira.jpg" class="img-fluid" alt="Chakwizira T. R. Diza" loading="lazy" decoding="async">
                 
               </div>
               <div class="member-info">
@@ -259,7 +260,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/othanial.jpg" class="img-fluid" alt="Humbert K. Choeni">
+                <img src="assets/img/team/othanial.jpg" class="img-fluid" alt="Humbert K. Choeni" loading="lazy" decoding="async">
                 
               </div>
               <div class="member-info">
@@ -275,7 +276,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/proud.jpg" class="img-fluid" alt="Proud Ndlovu">
+                <img src="assets/img/team/proud.jpg" class="img-fluid" alt="Proud Ndlovu" loading="lazy" decoding="async">
                 
               </div>
               <div class="member-info">
@@ -288,7 +289,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/kudzai.jpg" class="img-fluid" alt="Proud Ndlovu">
+                <img src="assets/img/team/kudzai.jpg" class="img-fluid" alt="Proud Ndlovu" loading="lazy" decoding="async">
               
               </div>
               <div class="member-info">
@@ -301,7 +302,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/mathew.jpg" class="img-fluid" alt="Mathew">
+                <img src="assets/img/team/mathew.jpg" class="img-fluid" alt="Mathew" loading="lazy" decoding="async">
                
               </div>
               <div class="member-info">
@@ -315,7 +316,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/noku.jpg" class="img-fluid" alt="Mathew">
+                <img src="assets/img/team/noku.jpg" class="img-fluid" alt="Mathew" loading="lazy" decoding="async">
               
               </div>
               <div class="member-info">
@@ -329,7 +330,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/lanisha.jpg" class="img-fluid" alt="Mathew">
+                <img src="assets/img/team/lanisha.jpg" class="img-fluid" alt="Mathew" loading="lazy" decoding="async">
               </div>
               <div class="member-info">
                 <h4>Lanisha Musindo</h4>

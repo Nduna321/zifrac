@@ -24,8 +24,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Main CSS File (preload to reduce render-blocking) -->
+  <link rel="preload" href="assets/css/main.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link href="assets/css/main.min.css" rel="stylesheet"></noscript>
 
   <!-- =======================================================
   * Template Name: ZIFRAC Land Developers
@@ -129,7 +130,7 @@
           </div>
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="ZIFRAC enterprise delivery" class="img-fluid services-img">
+            <img src="assets/img/services.jpg" alt="ZIFRAC enterprise delivery" class="img-fluid services-img" loading="lazy">
             <h3>End-to-end retail sourcing and logistics delivery</h3>
             <p>
               ZIFRAC sources quality electricals, solar, gas, phones, and bedding while providing reliable logistics and in-store support across Zimbabwe. Our team works with partners to design practical inventory flows, optimise last-mile delivery, and ensure products reach customers on time.
