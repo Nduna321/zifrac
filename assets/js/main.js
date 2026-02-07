@@ -168,7 +168,7 @@
     if (document.querySelector('.whatsapp-float')) {
       return;
     }
-  const encodedMessage = encodeURIComponent('May I have more information about ZIFRAC Land Developers?');
+  const encodedMessage = encodeURIComponent('May I have more information about ZIFRAC Construction?');
     const whatsappLink = document.createElement('a');
     whatsappLink.href = `https://wa.me/263772356805?text=${encodedMessage}`;
     whatsappLink.className = 'whatsapp-float';

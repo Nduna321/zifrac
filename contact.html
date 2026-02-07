@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact ZIFRAC Land Developers | Get in Touch for Your Project</title>
-  <meta name="description" content="Contact ZIFRAC Land Developers in Harare, Zimbabwe for construction services, land development quotes, and project inquiries. Phone: +263 772 356 805, Email: zifracholdings@gmail.com">
+  <title>Contact ZIFRAC Construction | Get in Touch for Your Project</title>
+  <meta name="description" content="Contact ZIFRAC Construction in Harare, Zimbabwe for construction services, land development quotes, and project inquiries. Phone: +263 772 356 805, Email: zifracholdings@gmail.com">
   <meta name="keywords" content="contact ZIFRAC, construction contractor Zimbabwe, construction inquiry, project quote, Harare construction">
-  <meta name="author" content="ZIFRAC Land Developers">
+  <meta name="author" content="ZIFRAC Construction">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   
   <!-- Open Graph Tags -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zifrac.co.zw/contact.html">
-  <meta property="og:title" content="Contact ZIFRAC Land Developers">
-  <meta property="og:description" content="Get in touch with ZIFRAC for construction and development projects in Zimbabwe">
+  <meta property="og:title" content="Contact ZIFRAC Construction">
+  <meta property="og:description" content="Get in touch with ZIFRAC Construction for construction and development projects in Zimbabwe">
   <meta property="og:image" content="https://zifrac.co.zw/assets/img/contact-page-title-bg.jpg">
   
   <!-- Canonical Link -->
@@ -41,7 +41,7 @@
   <noscript><link href="assets/css/main.min.css" rel="stylesheet"></noscript>
 
   <!-- =======================================================
-  * Template Name: ZIFRAC Land Developers
+  * Template Name: ZIFRAC Construction
   * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
   * Updated: Jan 09 2026
   * Author: ZIFRAC
@@ -137,27 +137,27 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <form id="contact-form" data-aos="fade-up" data-aos-delay="500">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" id="name" class="form-control" placeholder="Your Name" required>
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="you@example.com" required="">
+                  <input type="email" id="email" class="form-control" placeholder="your@email.com" required>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" value="ZIFRAC Inquiry" required="">
+                  <input type="text" id="subject" class="form-control" value="ZIFRAC Inquiry" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" required="">Hello ZIFRAC team, I would like more information about your construction services and project capabilities.</textarea>
+                  <textarea id="message" class="form-control" rows="6" placeholder="Your message..." required>Hello ZIFRAC team, I would like more information about your construction services and project capabilities.</textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="submit" class="btn btn-primary">Send Message via Gmail</button>
                 </div>
 
               </div>
@@ -181,7 +181,7 @@
             <a href="index.html" class="logo d-flex align-items-center">
               <span class="sitename">ZIFRAC</span>
             </a>
-            <p>ZIFRAC Land Developers delivers comprehensive construction and land development solutions including road construction, architectural design, water infrastructure, and project management — with a focus on quality and timely delivery.</p>
+            <p>ZIFRAC Construction delivers comprehensive construction and land development solutions including road construction, architectural design, water infrastructure, and project management — with a focus on quality and timely delivery.</p>
             <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -230,7 +230,7 @@
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Contact form: Uses native mailto redirect (fully static, no backend required) -->
         Developed by <strong>Proud Ndlovu (Engineer P)</strong>
       </div>
     </div>
@@ -254,31 +254,28 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Static Contact Form - Gmail Redirect -->
   <script>
-    (function() {
-      const contactForm = document.querySelector('.php-email-form');
-      if (!contactForm) return;
-
-      contactForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const formData = new FormData(contactForm);
-        const name = (formData.get('name') || '').trim();
-        const email = (formData.get('email') || '').trim();
-        const subjectInput = (formData.get('subject') || '').trim();
-        const messageInput = (formData.get('message') || '').trim();
-
-        const subject = subjectInput || 'ZIFRAC Inquiry';
-        const bodyLines = [
-          `Name: ${name || 'N/A'}`,
-          `Email: ${email || 'N/A'}`,
-          '',
-          messageInput || 'Hello ZIFRAC team, may I have more information about your products and pricing?' 
-        ];
-
-        window.location.href = `mailto:zifracholdings@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
-      });
-    })();
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+      
+      if (!name || !email || !subject || !message) {
+        alert('Please fill in all fields');
+        return;
+      }
+      
+      // Create email body with auto-filled fields
+      const emailBody = `Name: ${name}\nEmail: ${email}\nPhone: [Your phone]\n\n${message}`;
+      
+      // Redirect to Gmail with pre-filled fields
+      const mailtoLink = `mailto:zifracholdings@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+      window.location.href = mailtoLink;
+    });
   </script>
 
 </body>

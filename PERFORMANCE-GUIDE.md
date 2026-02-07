@@ -1,4 +1,4 @@
-# ZIFRAC Website Performance Optimization Guide
+# ZIFRAC HOLDINGS Website Performance Optimization Guide
 
 ## Current Performance Optimizations Implemented
 

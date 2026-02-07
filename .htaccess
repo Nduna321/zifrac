@@ -1,4 +1,4 @@
-# ZIFRAC Land Developers - Performance & Security Configuration
+# ZIFRAC HOLDINGS - Performance & Security Configuration
 
 # Enable GZIP Compression
 <IfModule mod_deflate.c>
